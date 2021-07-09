@@ -1,0 +1,10 @@
+.Footer {
+	position: fixed;
+	bottom: -5px;
+	font-size: 1em;
+}
+
+.FooterText {
+	font-size: 1em;
+	text-transform: uppercase;
+}
