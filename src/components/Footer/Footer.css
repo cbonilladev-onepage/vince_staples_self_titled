@@ -14,3 +14,11 @@
 	margin-left: 2em;
 	margin-right: 2em;
 }
+
+@media (max-width: 800px) {
+	.FooterText {
+		font-size: .75em;
+		margin-bottom: 1.75vh;
+	}
+}
+

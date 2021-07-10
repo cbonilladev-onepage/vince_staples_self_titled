@@ -16,6 +16,12 @@
 	filter: invert(93%) sepia(27%) saturate(126%) hue-rotate(19deg) brightness(93%) contrast(94%);
 }
 
+.PauseButton {
+	width: 3em;
+	cursor: pointer;
+	filter: invert(93%) sepia(27%) saturate(126%) hue-rotate(19deg) brightness(93%) contrast(94%);
+}
+
 .audioSource {
 	display: none;
 }

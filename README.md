@@ -1,4 +1,4 @@
-# Vince Staples, Self-Titled
+# Vince Staples by Vince Staples
 
 A small passion project based on Vince Staples' 2021 Self-Titled album. The aesthetic is inspiring. 
 

@@ -4,4 +4,17 @@
 	font-size: 3em;
 	text-transform: uppercase;
 	cursor: crosshair;
+	text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+	.TitleTrack {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 900px) {
+	.TitleTrack {
+		font-size: 1.5em;
+	}
 }
