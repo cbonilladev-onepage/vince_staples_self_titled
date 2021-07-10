@@ -1,14 +1,10 @@
 import React from 'react'
 import './Header.css'
 
-const boldText = {
-	fontWeight: 'bold'
-}
-
 const Header = () => {
 	return (
 		<header>
-			<span style={boldText} className="TitleTrack">Vince Staples, Self-Titled</span>
+			<span style={{fontWeight: '700'}} className="TitleTrack">*** Vince Staples *** By *** Vince Staples ***</span>
 		</header>
 	)
 }

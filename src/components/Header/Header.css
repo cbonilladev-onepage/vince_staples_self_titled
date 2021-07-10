@@ -1,6 +1,7 @@
 .TitleTrack {
-	font-weight: 700;
+	/* font-weight: 900; */
 	/* color: red; */
 	font-size: 3em;
 	text-transform: uppercase;
+	cursor: crosshair;
 }
