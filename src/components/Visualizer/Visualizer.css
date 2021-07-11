@@ -5,7 +5,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: -1;
 }
 
 .VisualizerField {}
@@ -24,4 +23,8 @@
 
 .audioSource {
 	display: none;
+}
+
+canvas {
+	position: absolute;
 }

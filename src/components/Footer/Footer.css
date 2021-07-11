@@ -18,7 +18,13 @@
 @media (max-width: 800px) {
 	.FooterText {
 		font-size: .75em;
-		margin-bottom: 1.75vh;
+		margin-bottom: 1.5em;
 	}
 }
 
+@media (max-width: 400px) {
+	.FooterText {
+		font-size: .5em;
+		margin-bottom: 1.75em;
+	}
+}

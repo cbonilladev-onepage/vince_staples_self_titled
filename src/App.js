@@ -9,7 +9,7 @@ function App() {
 
 	const handleProgress = ({playedSeconds}) => {
 		setElapsedTime(playedSeconds)
-    console.log(playedSeconds)
+    // console.log(playedSeconds)
 	}
 
   return (

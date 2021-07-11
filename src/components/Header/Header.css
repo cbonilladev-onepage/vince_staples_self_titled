@@ -5,6 +5,7 @@
 	text-transform: uppercase;
 	cursor: crosshair;
 	text-decoration: none;
+	z-index: 1;
 }
 
 @media (max-width: 1400px) {
@@ -15,6 +16,13 @@
 
 @media (max-width: 900px) {
 	.TitleTrack {
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 }
+
+@media (max-width: 400px) {
+	.TitleTrack {
+		font-size: .75em;
+	}
+}
+
