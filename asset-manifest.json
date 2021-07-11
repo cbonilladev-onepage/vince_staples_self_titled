@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vince_staples_self_titled/static/css/main.73a36166.chunk.css",
+    "main.js": "/vince_staples_self_titled/static/js/main.9eb5571d.chunk.js",
+    "main.js.map": "/vince_staples_self_titled/static/js/main.9eb5571d.chunk.js.map",
+    "runtime-main.js": "/vince_staples_self_titled/static/js/runtime-main.249a96d0.js",
+    "runtime-main.js.map": "/vince_staples_self_titled/static/js/runtime-main.249a96d0.js.map",
+    "static/js/2.3c08458a.chunk.js": "/vince_staples_self_titled/static/js/2.3c08458a.chunk.js",
+    "static/js/2.3c08458a.chunk.js.map": "/vince_staples_self_titled/static/js/2.3c08458a.chunk.js.map",
+    "static/js/3.4b4b769c.chunk.js": "/vince_staples_self_titled/static/js/3.4b4b769c.chunk.js",
+    "static/js/3.4b4b769c.chunk.js.map": "/vince_staples_self_titled/static/js/3.4b4b769c.chunk.js.map",
+    "index.html": "/vince_staples_self_titled/index.html",
+    "static/css/main.73a36166.chunk.css.map": "/vince_staples_self_titled/static/css/main.73a36166.chunk.css.map",
+    "static/js/2.3c08458a.chunk.js.LICENSE.txt": "/vince_staples_self_titled/static/js/2.3c08458a.chunk.js.LICENSE.txt",
+    "static/media/pausebutton.94b3b031.svg": "/vince_staples_self_titled/static/media/pausebutton.94b3b031.svg",
+    "static/media/playbutton.162e0452.svg": "/vince_staples_self_titled/static/media/playbutton.162e0452.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.249a96d0.js",
+    "static/js/2.3c08458a.chunk.js",
+    "static/css/main.73a36166.chunk.css",
+    "static/js/main.9eb5571d.chunk.js"
+  ]
+}
