@@ -1,3 +1,4 @@
+
 import "p5/lib/addons/p5.sound";
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
@@ -20,26 +21,26 @@ const Visualizer = (props) => {
 		return <img onClick={handleAudio} className="PauseButton" src={pauseButton} alt="pause button" />
 	}
 
-	// const s = (sketch) => {
-	// 	var mic;
-		
-	// 	sketch.setup = () => {
-	// 		sketch.createCanvas(800, 600)
-	// 		mic = new p5.AudioIn();
-	// 		mic.start();
-	// 	};
+	let amplitude;
+	const s = (sketch) => {
 
-	// 	sketch.draw = () => {
-	// 		sketch.background(51);
-	// 		let vol = mic.getLevel();
-	// 		sketch.ellipse(sketch.height/2, sketch.height/2, vol*500, vol*500);
-	// 	};
-	// };
+		sketch.setup = () => {
+			sketch.createCanvas(200, 200)
+			// amplitude = new p5.Amplitude();
+		};
+
+		sketch.draw = () => {
+			sketch.background('#083664');
+			let vol = amplitude.getLevel();
+			// sketch.ellipse(sketch.height/2, sketch.width/2, vol*500, vol*500);
+			// console.log('volume', vol);
+		};
+	};
 
 	// useEffect(() => {
-	// 	//If you don't throw a useEffect, it will render multiple canvas. No no no.
-	// 	var myp5 = new p5(s, 'p5sketch');
-	// }, [])
+	// 	// If you don't throw a useEffect, it will render multiple canvases. No no no.
+	// 	new p5(s, 'p5sketch');
+	// }, []);
 
 
 	const CurrButton = () => {
@@ -55,10 +56,6 @@ const Visualizer = (props) => {
 				<div>
 					<CurrButton />
 					<ReactPlayer loop={true} playing={audioState} className="audioSource" url="https://www.youtube.com/watch?v=2r3mx_8GF9E" onProgress={props.handleProgress}></ReactPlayer>
-					{/* <p>VISUALIZER</p> */}
-					{/* <div id="p5sketch" className="visualizer">
-
-					</div> */}
 				</div>
 			</div>
 		</div>

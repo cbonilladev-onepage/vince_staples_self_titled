@@ -1,13 +1,16 @@
-body {
+html, body {
 	background-color: #083664;
 	color: #E7E4D1;
 	font-family: 'Source Code Pro', monospace;
+	/* height: 100%;
+	overflow: hidden; */
 }
 
 .SiteLayout {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100%;
 	/* font-family: 'IBM Plex Sans', sans-serif; */
 }
 
@@ -16,5 +19,9 @@ body {
 	width: 98vw;
 	height: 1px;
 	position: fixed;
-	bottom: 2.5em;
+	bottom: 3em;
 }
+/* 
+.Header {
+	flex-grow: 3;
+} */
