@@ -2,6 +2,7 @@
 import p5 from 'p5';
 import "p5/lib/addons/p5.sound";
 import React, { useEffect, useState } from 'react';
+import AudioSpectrum from 'react-audio-spectrum';
 // import ReactPlayer from 'react-player';
 import apple from '../../assets/apple.mp3';
 import pauseButton from '../../assets/pausebutton.svg';
@@ -25,7 +26,7 @@ const Visualizer = (props) => {
 			props.appleRef.current.pause()
 		}
 	}, [audioState, props.appleRef])
-	
+
 	const PlayButton = () => {
 		return <img onClick={handleAudio} className="PlayButton" src={playButton} alt="play button" />
 	}
@@ -35,12 +36,12 @@ const Visualizer = (props) => {
 	}
 
 	let song, amp;
+	let volHistory = [];
+
 	const s = (sketch) => {
-		// sketch.preload = () => {
-		// 	song = sketch.loadSound({apple})
-		// }
 		sketch.preload = () => {
-			song = sketch.loadSound({apple})
+			song = sketch.loadSound(apple)
+			// sketch.getAudioContext().resume()
 		}
 
 		sketch.setup = () => {
@@ -50,9 +51,9 @@ const Visualizer = (props) => {
 
 		sketch.draw = () => {
 			sketch.background(0);
-  			let vol = amp.getLevel();
-  			sketch.ellipse(sketch.height/2, sketch.width/2, vol*300, vol*300);
-  			console.log(vol)
+			let vol = amp.getLevel();
+			volHistory.push(vol);
+			// console.log(vol)
 		};
 	};
 
@@ -79,7 +80,23 @@ const Visualizer = (props) => {
 				<div>
 					<CurrButton />
 					{/* <ReactPlayer loop={true} playing={audioState} className="audioSource" url="https://www.youtube.com/watch?v=2r3mx_8GF9E" onProgress={props.handleProgress}></ReactPlayer> */}
-					<audio src={apple} ref={props.appleRef} onTimeUpdate={props.logChange} loop/>
+					<audio id="audio-element" src={apple} ref={props.appleRef} onTimeUpdate={props.logChange} loop />
+					<AudioSpectrum
+						id="audio-canvas"
+						height={800}
+						width={1500}
+						audioId={'audio-element'}
+						capColor={'#E7E4D1'}
+						capHeight={10}
+						meterWidth={10}
+						meterCount={100}
+						meterColor={[
+							{ stop: 0, color: '#f00' },
+							{ stop: 0.5, color: '#E7E4D1' },
+							{ stop: 1, color: '#E7E4D1' }
+						]}
+						gap={10}
+					/>
 				</div>
 			</div>
 		</div>
