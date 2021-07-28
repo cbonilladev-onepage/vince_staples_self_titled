@@ -34,28 +34,32 @@ const Visualizer = (props) => {
 		return <img onClick={handleAudio} className="PauseButton" src={pauseButton} alt="pause button" />
 	}
 
-	let amplitude, song
-
+	let song, amp;
 	const s = (sketch) => {
+		// sketch.preload = () => {
+		// 	song = sketch.loadSound({apple})
+		// }
+		sketch.preload = () => {
+			song = sketch.loadSound({apple})
+		}
 
 		sketch.setup = () => {
 			sketch.createCanvas(200, 200)
-			song = sketch.loadSound(apple, sketch.loaded)
-			amplitude = new p5.Amplitude();
+			amp = new p5.Amplitude();
 		};
 
 		sketch.draw = () => {
-			sketch.background('#083664');
-			let vol = amplitude.getLevel();
-			// sketch.ellipse(sketch.height/2, sketch.width/2, vol*500, vol*500);
-			// console.log('volume', vol);
+			sketch.background(0);
+  			let vol = amp.getLevel();
+  			sketch.ellipse(sketch.height/2, sketch.width/2, vol*300, vol*300);
+  			console.log(vol)
 		};
 	};
 
-	useEffect(() => {
-		// If you don't throw a useEffect, it will render multiple canvases. No no no.
-		new p5(s, 'p5sketch');
-	}, []);
+	// useEffect(() => {
+	// 	// If you don't throw a useEffect, it will render multiple canvases. No no no.
+	// 	new p5(s, 'p5sketch');
+	// }, []);
 
 	// const logChange = () => {
 	// 	setPlayTime(Math.floor(appleRef.current.currentTime))
