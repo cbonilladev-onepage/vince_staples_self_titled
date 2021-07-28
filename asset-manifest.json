@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/vince_staples_self_titled/static/css/main.d88ec72c.chunk.css",
-    "main.js": "/vince_staples_self_titled/static/js/main.af81ba82.chunk.js",
-    "main.js.map": "/vince_staples_self_titled/static/js/main.af81ba82.chunk.js.map",
-    "runtime-main.js": "/vince_staples_self_titled/static/js/runtime-main.d655688e.js",
-    "runtime-main.js.map": "/vince_staples_self_titled/static/js/runtime-main.d655688e.js.map",
-    "static/js/2.3dd3453e.chunk.js": "/vince_staples_self_titled/static/js/2.3dd3453e.chunk.js",
-    "static/js/2.3dd3453e.chunk.js.map": "/vince_staples_self_titled/static/js/2.3dd3453e.chunk.js.map",
-    "static/js/3.4e80b184.chunk.js": "/vince_staples_self_titled/static/js/3.4e80b184.chunk.js",
-    "static/js/3.4e80b184.chunk.js.map": "/vince_staples_self_titled/static/js/3.4e80b184.chunk.js.map",
+    "main.css": "/vince_staples_self_titled/static/css/main.eebd4171.chunk.css",
+    "main.js": "/vince_staples_self_titled/static/js/main.7b148219.chunk.js",
+    "main.js.map": "/vince_staples_self_titled/static/js/main.7b148219.chunk.js.map",
+    "runtime-main.js": "/vince_staples_self_titled/static/js/runtime-main.ef47b882.js",
+    "runtime-main.js.map": "/vince_staples_self_titled/static/js/runtime-main.ef47b882.js.map",
+    "static/js/2.19f99337.chunk.js": "/vince_staples_self_titled/static/js/2.19f99337.chunk.js",
+    "static/js/2.19f99337.chunk.js.map": "/vince_staples_self_titled/static/js/2.19f99337.chunk.js.map",
+    "static/js/3.226f19cc.chunk.js": "/vince_staples_self_titled/static/js/3.226f19cc.chunk.js",
+    "static/js/3.226f19cc.chunk.js.map": "/vince_staples_self_titled/static/js/3.226f19cc.chunk.js.map",
     "index.html": "/vince_staples_self_titled/index.html",
-    "static/css/main.d88ec72c.chunk.css.map": "/vince_staples_self_titled/static/css/main.d88ec72c.chunk.css.map",
-    "static/js/2.3dd3453e.chunk.js.LICENSE.txt": "/vince_staples_self_titled/static/js/2.3dd3453e.chunk.js.LICENSE.txt",
+    "static/css/main.eebd4171.chunk.css.map": "/vince_staples_self_titled/static/css/main.eebd4171.chunk.css.map",
+    "static/js/2.19f99337.chunk.js.LICENSE.txt": "/vince_staples_self_titled/static/js/2.19f99337.chunk.js.LICENSE.txt",
     "static/media/apple.5817596b.mp3": "/vince_staples_self_titled/static/media/apple.5817596b.mp3",
     "static/media/pausebutton.94b3b031.svg": "/vince_staples_self_titled/static/media/pausebutton.94b3b031.svg",
     "static/media/playbutton.162e0452.svg": "/vince_staples_self_titled/static/media/playbutton.162e0452.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d655688e.js",
-    "static/js/2.3dd3453e.chunk.js",
-    "static/css/main.d88ec72c.chunk.css",
-    "static/js/main.af81ba82.chunk.js"
+    "static/js/runtime-main.ef47b882.js",
+    "static/js/2.19f99337.chunk.js",
+    "static/css/main.eebd4171.chunk.css",
+    "static/js/main.7b148219.chunk.js"
   ]
 }
