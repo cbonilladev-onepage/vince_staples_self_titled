@@ -37,7 +37,7 @@ canvas {
 
 #audio-canvas {
 	position: absolute;
-	left: 2em;
+	left: 10vw;
 	top: 8.1em;
 	z-index: -1;
 }
